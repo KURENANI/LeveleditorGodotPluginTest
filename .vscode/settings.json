@@ -79,7 +79,6 @@
     ".gitattributes": true,
     ".gitmodules": true,
     ".sconsign.dblite": true,
-    "compile_commands.json": true,
     "methods.py":true,
     "2d_build_profile.json":true,
     "3d_build_profile.json":true,
@@ -92,7 +91,12 @@
     ".github":true,
     "godot-cpp":true,
     "setup.py":false
+    
 },
+"clangd.arguments": [
+  "--compile-commands-dir=${workspaceFolder}",
+  "--query-driver=C:/msys64/mingw64/bin/g++.exe"
+],
   "files.eol": "\n",
   "files.insertFinalNewline": true
 }
